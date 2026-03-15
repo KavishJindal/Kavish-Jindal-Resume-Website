@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kavish Jindal | Contact</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Kavish Jindal</h1>
+        <p><em>Let's Connect</em></p>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="experience.html">Experience</a>
+        <a href="achievements.html">Skills & Achievements</a>
+        <a href="contact.html">Contact Me</a>
+    </nav>
+
+    <main>
+        <section id="contact-form-section">
+            <h2>Reach Out for Collaboration</h2>
+            <div class="form-container">
+                <form action="/submit-form" method="GET" class="modern-form">
+                    
+                    <div class="form-group">
+                        <label for="fullName">Full Name</label>
+                        <input type="text" id="fullName" name="fullName" required placeholder="e.g., Jane Doe">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="emailAddr">Email Address</label>
+                        <input type="email" id="emailAddr" name="emailAddr" required placeholder="you@example.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="inquiryType">Purpose of Inquiry</label>
+                        <select id="inquiryType" name="inquiryType" required>
+                            <option value="" disabled selected>Please select an option...</option>
+                            <option value="recruitment">Recruitment / Internship</option>
+                            <option value="consulting">Consulting Project</option>
+                            <option value="networking">General Networking</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Preferred method of contact:</label>
+                        <div class="radio-group">
+                            <label class="radio-label">
+                                <input type="radio" name="contactMethod" value="email" required> Email
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="contactMethod" value="linkedin"> LinkedIn Message
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="button-group">
+                        <button type="submit" class="btn-primary">Send Message</button>
+                        <button type="reset" class="btn-secondary">Clear Form</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Kavish Jindal</p>
+    </footer>
+</body>
+</html>
